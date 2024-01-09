@@ -1,6 +1,6 @@
 FROM amazoncorretto:11-alpine3.17
 LABEL author = "RAMYA"
-LABEL Reason = "LEARNING"
+LABEL Reason = "LEARNINGpurpose"
 RUN adduser -h /petclinic -s /bin/sh -D petclinic
 USER petclinic
 WORKDIR petclinic
