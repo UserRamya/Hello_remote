@@ -1,14 +1,7 @@
 
-provider "aws" {
-  region     = "us-east-1"
-  access_key = "AKIAXZ3OMRP2FQ2ZJIPC"
-  secret_key = "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"
-}
 
-#resource "aws_kms_key" "testkms" {
-#  description             = "KMS key 1"
-#  
-#}
+
+
 
 resource "aws_s3_bucket" "s3testbucket" {
   bucket = "harish-terraform-demo"
@@ -45,10 +38,9 @@ resource "aws_s3_bucket_policy" "s3policy" {
 
 data "aws_iam_policy_document" "allow_access" {
   statement {
-    principals {
-      type        = "AWS"
-      identifiers = ["536565550068"]
-    }
+    # principals {
+      
+    # }
 
     actions = [
       "s3:GetObject",

@@ -8,11 +8,7 @@ terraform {
     }
   }
 }
-#provider "aws" {
-#  region     = "us-east-1"
-#  access_key = "AKIAXZ3OMRP2FQ2ZJIPC"
-#  secret_key = "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"
-#}
+
 
 data "aws_key_pair" "key_pair" {
   key_name           = "test"
